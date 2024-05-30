@@ -1,11 +1,11 @@
-package io.github.kodiitulip.drinkup;
+package io.github.kodiitulip.drinkup.common;
 
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Drinkup implements ModInitializer {
+public class DrinkUp implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("Drink Up");
 
     @Override

@@ -1,6 +1,6 @@
 package io.github.kodiitulip.drinkup.mixin;
 
-import io.github.kodiitulip.drinkup.Drinkup;
+import io.github.kodiitulip.drinkup.common.DrinkUp;
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -11,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class TitleScreenMixin {
     @Inject(method = "init", at = @At("TAIL"))
     public void onInit(CallbackInfo ci) {
-        Drinkup.LOGGER.info("This line is printed by an example mod mixin!");
+        DrinkUp.LOGGER.info("This line is printed by an example mod mixin!");
     }
 }

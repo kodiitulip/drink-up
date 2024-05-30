@@ -15,7 +15,9 @@
         },
         "intermediate_mappings": "net.fabricmc:intermediary",
         "entrypoints": {
-            "init": "io.github.kodiitulip.drinkup.Drinkup"
+            "init": "io.github.kodiitulip.drinkup.common.DrinkUp",
+						"client-init": "io.github.kodiitulip.drinkup.client.DrinkUpClient",
+						"fabric-datagen": "io.github.kodiitulip.drinkup.common.DrinkUpDataGen"
         },
         "depends": [
             {
