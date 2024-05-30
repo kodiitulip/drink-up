@@ -1,5 +1,7 @@
 package io.github.kodiitulip.drinkup.common;
 
+import io.github.kodiitulip.drinkup.common.init.ModBlocks;
+import io.github.kodiitulip.drinkup.common.init.ModItems;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;
@@ -10,6 +12,10 @@ public class DrinkUp implements ModInitializer {
 
     @Override
     public void onInitialize(ModContainer mod) {
-        LOGGER.info("Hello Quilt world from {}! Stay fresh!", mod.metadata().name());
+
+		ModBlocks.initialize(mod);
+		ModItems.initialize(mod);
+
+        LOGGER.info("Its time to {}! Stay Hydrated!", mod.metadata().name());
     }
 }
